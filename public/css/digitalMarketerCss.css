@@ -1,0 +1,248 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+   *    {
+    box-sizing: border-box;
+    
+  }
+  
+  body  {
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-size: 70%;
+    margin:-10px; 
+    padding: 100px;
+    background-color:rgb(255,255,255);
+    margin-top: -130px;
+    margin-left: -112px;
+    margin-right: -112px;
+  }
+  
+  .btn_download2 {
+    background-color:   #ff9999;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+  }
+  
+  
+  
+  .btn_download2:hover {
+    background-color:  #ff6666;;
+    color: white;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  section > div {
+    display: none;
+  }
+  
+  #radio-section-0:checked ~ #section-0 > div {
+    display: block;
+  }
+  
+  #radio-section-1:checked ~ #section-1 > div {
+    display: block;
+  }
+  
+  #radio-section-2:checked ~ #section-2 > div {
+    display: block;
+  }
+  
+  #radio-section-3:checked ~ #section-3 > div {
+    display: block;
+  }
+  
+  #radio-section-4:checked ~ #section-4 > div {
+    display: block;
+  }
+
+  #radio-section-5:checked ~ #section-5 > div {
+    display: block;
+  }
+
+  #radio-section-6:checked ~ #section-6 > div {
+    display: block;
+  }
+
+  #radio-section-7:checked ~ #section-7 > div {
+    display: block;
+  }
+
+  
+  
+  
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .left {
+    flex: 30%;
+    /*background-color: #f1f1f1;*/
+    padding: 20px;
+  }
+  
+  /* right column */
+  .right {
+    flex: 80%;
+    background-color: white;
+    padding: 0px;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .row, .navbar {   
+      flex-direction: row;
+    }
+
+        
+    
+    }
+  
+  table {
+         border-collapse: collapse;
+         table-layout: auto;
+         width: 90%;
+  }
+  
+  /*th {height: 5px;}*/
+  
+  
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+   th, td {
+    border: 1px solid black;
+    padding: 0px;
+    text-align: left;
+  }
+  
+  
+  tr:nth-child(even) {
+  background-color: #f2f2f2; 
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  a:link {
+      color:#009999;
+  }
+  a:visited {
+    color:#009999;
+  }
+  a:hover {
+    color:#ff6666;
+  }
+  a:active {
+    color:#ff9999;
+  }
+  
+  
+  table.skills,td.skill2 {
+    border:0px solid black;
+    border-collapse: collapse;
+  }
+  
+  td.skill2 {
+       padding: 15px;
+       text-align: left;  
+  }
+  
+  table.skills {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  ol.BuisnessSkills {
+    list-style-type: upper-roman;
+    
+      text-align: left;
+    }
+
+    /*ol.DigitalSkills {
+      list-style-type: upper-roman;
+      padding: 115px;
+      text-align: left;  
+    }*/
+
+    td.BuisnessSkills1 {
+      
+      padding: -5px;
+      
+ }
+
+  
+  caption { 
+    display: table-caption;
+    text-align: center;
+  }
+  
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 0px;
+    /*background-color: #2196F3;*/
+    padding: 2px;
+    
+  }
+  .grid-item1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    /*border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    /*font-size: 30px;*/
+    text-align: left;
+    margin: 1px;
+    /*text-decoration: underline;*/
+    font-weight: bold;
+    
+  }
+  
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    /*background-color: #2196F3;*/
+    padding: 0px;
+    grid-row-gap: 5px;
+    grid-column-gap: 0px;
+   }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /*border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    /*font-size: 30px;*/
+    text-align: left;
+    margin: 0px;
+    /*text-decoration: underline;*/
+    font-weight: normal;
+    padding: 0px;
+    
+  }
+
+  
+  
+
+  

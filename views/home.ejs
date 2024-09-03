@@ -1,0 +1,1051 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html  lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  
+  <title>InfoTechCrush | Building from ground up</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="Keywords" content="Websites creation"/>
+  <meta name="author" content="Oyekanmi Oyetunji"/>
+  <meta name="refresh" content="30"/>
+  
+
+  
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <script src="https://kit.fontawesome.com/40c559f4dd.js"></script>
+
+  <!--CSS-->
+	<!-- load bootstrap and our own personal stylesheet -->
+	
+	<link rel="stylesheet" href="css/style.css">
+  <script src="public/js/a.js"></script>
+   <!--ICONS-->
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+   <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+
+   
+
+<!--Next, link AOS styles and scripts:-->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!--Google Fonts:-->
+
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css"/>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--Next, link AOS styles and scripts:
+
+<link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+
+<script src="bower_components/aos/dist/aos.js"></script>-->
+
+<!--AngularJs scripts-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+<!--nav for both mobile and desktop-->
+
+<nav class="navbar navbar-expand-md sticky-top navbar1">
+  
+  <div class="container-fluid">
+
+    
+
+      <a class="navbar-brand" href="/home">
+
+        
+      <!--<img src="jelil.jpg" alt="Logo" style="width:40px;" class="rounded-pill">-->
+      <p class="h2 logo" id="logo" style="color:white" target="_self">InfoTechCrush</p>
+
+      </a>
+    
+
+      
+      
+      
+         
+        <div class="clearfix" style="color:white;">
+          <span id="lblGreetings" class="float-start"></span>
+          <!--<span onclick="darkMode()">dark</span>-->
+        </div>
+      
+      
+
+      
+      <!--Mobile Menu Background Color-->
+  
+    <div class="offcanvas offcanvas-start sideMobileMenu" id="sideBar">
+
+      <div class="offcanvas-header mobileMenuAdjust">
+
+    
+        <h1 class="offcanvas-title" id="mobileMenuHeading">InfoTechCrush</h1>
+
+          <!--cancel button-->
+          <div id="mobileMenuButton1">
+            <p class="closebtn" type="button" style="display: hidden;"
+            data-bs-dismiss="offcanvas"> &times;
+            </p>
+          </div>
+
+
+
+       <!--Mobile Menu-->
+            
+      <div   class="" id="mobileMenu">
+
+
+        
+          <ul class="offcanvas-body mobileNav">
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/home" target="_self">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/aboutMe" target="_self">About Us</a>
+            </li>
+            
+            <!--<li class="nav-item dropdown-toggle btn btn-primary" data-bs-toggle="dropdown">
+              <a class="nav-link dropdown-menu" href="#">Services</a>
+            </li>-->
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio" target="_self">Our Portfolio</a>
+            </li>
+  
+  
+  
+            <div class="r">
+              <li class="tooltip2">
+              
+                <label class="label" for="touch"><span class="plusSign">Services</span></label>               
+                <input type="checkbox" id="touch"> 
+              
+                <ul class="plusSignMenu">
+                  
+                  <li><a href="/home" target="_self">Other Services</a></li>
+                  <li><a>Websites Development</a></li>
+                  <li><a>Application Development</a></li>
+                  <li><a>Digital marketing</a></li>
+                  <li><a>Search Engine Optimization</a></li>
+                  
+                </ul>
+                <!--<span class="tooltiptext">Tooltip text</span>-->
+              </li>
+            </div>
+            
+          
+  
+            
+            
+            
+  
+            <li class="nav-item">
+              <a class="nav-link ContactMobile" href="/home" target="_self">Contact Us</a>
+            </li>
+  
+          </ul>
+        
+        
+          
+        
+      </div>
+
+    </div>
+
+          
+  
+    
+    
+        
+        <!--Desktop Menu-->
+        
+        <ul class="collapse navbar-collapse justify-content-end desktopNav">
+          
+
+         
+
+
+
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="/home" target="_self">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutMe" target="_self">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/portfolio" target="_self">Our Portfolio</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Services<i class="arrow1 down1"></i></a>
+            <div class="dropdown-content">
+              <a class="nav-link list-group-item" href="#otherServices" target="_self">Other Services</a>
+              <a class="nav-link list-group-item">Websites Development</a>
+              <a class="nav-link list-group-item">Application Development</a>
+              <a class="nav-link list-group-item">Digital marketing</a>
+              <a class="nav-link list-group-item">Search Engine Optimization</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" target="_self">Contact</a>
+          </li>
+          
+
+
+
+          <!--<li class="nav-item">
+
+            
+            <a href="https://github.com/jelil-info" target="_self"><i class="nav-link fa fa-github footerOpacity"></i></a>
+            <a href="https://www.linkedin.com/in/OyekanmiOyetunji/" target="_self"><i class="nav-link fa fa-linkedin footerOpacity"></i></a>
+            <a href="https://www.facebook.com/oyekanmi.jalil" target="_self"><i class="nav-link fa fa-facebook-official footerOpacity"></i></a>
+            <a href="https://www.instagram.com/jelil_info/" target="_self"><i class="nav-link fa fa-instagram footerOpacity"></i></a>
+            <a href="https://www.twitter.com"><i class="nav-link fa fa-twitter footerOpacity" target="_self"></i></a>
+
+          </li>-->
+
+        </ul>
+
+        
+
+
+        
+        
+
+
+          
+
+
+        
+  </div>
+  
+  <!--mobile menu button-->
+
+      <div class="sideButton">
+        <button class="btn navbar-toggler" type="button" 
+        data-bs-toggle="offcanvas" data-bs-target="#sideBar">
+          <div class="barsContainer" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </button>
+      </div>
+      
+    
+       
+  </div>
+  
+</nav>
+
+
+
+
+
+  
+
+
+  <div class="header container-fluid">
+    
+      <div class=" text-white h-150">
+        <span class="display-6 typewriting1">Welcome To InfoTechCrush</span>
+        
+        <!--<span class="display-6" style="color:red">InfoTechCrush</span>-->
+        
+        <p class="typewriting2" id="typedtext"></p>
+          
+        <button onclick="window.location.href='#about';" class="btn btn-outline-secondary aboutUs">Services rendered</button>
+
+      </div>
+      
+    
+  </div>
+
+  
+
+  
+<section class="container-fluid  servicesDescription">
+  
+  <span id="about"></span>
+
+  <div class="row" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+   data-aos-once="true">
+  
+    
+    <div  class="shadow-lg p-4 col-sm-5 mt-3">
+      <h2>The Services We Render</h2>
+    
+     <p>
+      We Are ICT and Digital Services Company.
+      Our areas of operations revolve around the following services:
+     </p>
+    
+      
+      <ol class="ourServices">
+        <li  href="#">Websites Development</li>
+        <li  href="#">Application Development</li>
+        <li  href="#">Digital marketing</li>
+        <li  href="#">Search Engine Optimization</li>
+      </ol>
+    
+    
+     <p><button onclick="window.location.href='#otherServices';" type="button" class="btn btn-outline-secondary readMoreServices">
+      More services
+     </button>
+     </p>
+    </div>
+  
+   <div class="servicesDescription2 shadow-lg p-4 col-sm-3 mt-3 bg-light" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+      data-aos-once="true">
+    <h2>Custom Design</h2>
+    <p><img src="/folder3.png" alt="computer" width="60" height="60" style="margin-left: auto; margin-right: auto; color: red;"></p>
+    
+    <p>
+      We build websites that do not look exactly the same as thousands of others. 
+      The websites we build are as a result from building from sratch in order for your
+      websites to adapt to your specific requirements.
+    </p>
+
+   </div>
+
+   <div class="servicesDescription2 shadow-lg p-4 col-sm-3 mt-3 bg-light" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+        data-aos-once="true">
+      <h2>Mobile Responsive</h2>
+      <p><img src="/responsive2.png" alt="computer" width="60" height="60" style="margin-left: auto; margin-right: auto; color: red;"></p>
+      
+      <p>
+        We ensure the websites we build are according to AMP - Accelerated Mobile Pages, 
+        so that your websites can generate traffic from 65% of mobile internet users. 
+      </p>
+
+   </div>
+
+
+</div>
+
+   
+
+  
+
+<div class="row" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+ data-aos-once="true">
+
+  <div class="p-4 col-sm-5 mt-3" >
+
+             
+
+    
+  </div>
+
+  <div class="servicesDescription2 shadow-lg p-4 col-sm-3 bg-light mt-3">
+
+    <h2>24/7 Availalbility</h2>
+    <p><img src="/time3.png" alt="computer" width="60" height="60" style="margin-left: auto; margin-right: auto; color: red;"></p>
+
+    <p>
+     We have dedicated support team, who make sure your websites are up, running,
+     and functional so that your customers can find you 24/7.  
+    </p>
+
+  
+  </div>
+
+  <div class="servicesDescription2 shadow-lg p-4 col-sm-3 bg-light mt-3">
+    <h2>Easy to Edit</h2>
+    <p><img src="/paper.png" alt="computer" width="60" height="60" style="margin-left: auto; margin-right: auto; color: red;"></p>
+
+    <p>
+      You have full control of every aspect, element of your website and you can easily migrate to any 
+      platform if there is need to do so.
+      We build dynamic websites that can be easily be crafted so that new features and elements will be added
+      in order to meet your immediate and current specific needs. 
+      Your website will be absolutely scalable.
+    </p>
+  </div>
+
+
+
+
+</div>
+
+    
+
+  
+</section>
+
+
+
+<section class="container-fluid mt-4 projectsOffer">
+  
+  <span id="portfolio"></span>
+
+    <div class="col-8 projectContainer bg-warning p-4">
+      <h1 class="mx-auto projects">Projects</h1>
+
+      <h4 class="p-1">
+        We communicate and understand the business objectives of our clients with focus of 
+        delivery scalable and secured applications.
+      </h4>
+
+
+      
+      <div class="row">
+
+        <div class="col-sm bg-success m-sm-4 m-1 p-3 portfolio" style="width:350px;";>
+          <h2 class="Headingproject">Company Portfolio Website</h2>
+          <p class="p-1">
+            A company portfolio website is developed to showcase a company's strengths,
+            expertise, and capabilities, and to provide potential clients 
+            with the information they need to make an informed decision
+            about working with the company.
+          </p> 
+          <img src="/companyPortfolio.png" 
+          alt="company portfolio" width="300px" height="430px" class="imagePortfolio">
+          <a href="https://infotechcrush.onrender.com/" class="btn btn-success mt-3 justify-content-center" target="_blank">
+            Learn More</a>
+        </div>
+
+        
+
+        <div class="col-sm bg-secondary m-sm-4 m-1 p-3 portfolio" style="width: 350px">
+
+          <h2 class="Headingproject">Personal Portfolio Website</h2>
+          <p class="p-1">
+            A personal portfolio website is developed to showcase an individual's skills,
+            work experience, and achievements in a visually
+            appealing and professional manner.
+            The website serves as a digital resume or a platform 
+            to promote oneself to potential employers or clients
+            </p>
+          <img src="/portfolio.png" 
+          alt="personal portfolio" width="300px" height="430px" class="imagePortfolio">
+          <a href="https://jelil-info.onrender.com/" class="btn btn-success mt-3 justify-content-center" target="_blank">
+            Learn More</a>
+        </div>
+
+        <div class="col-sm bg-success m-sm-4 m-1 p-3 portfolio" style="width: 350px">
+          
+          <h2 class="Headingproject">eCommerce Website</h2>
+          <p class="p-1">
+            An online marketplace application is developed to have seller accounts,
+            product search and suggestions, shopping cart, order management,
+            payment processing, and real time chat for live auction.
+          </p>
+          <img src="/onlineMarket.png" 
+          alt="eCommerce" width="300px" height="430px" class="imagePortfolio">
+          <a href="https://jelil-info-onlinemarket.onrender.com/" class="btn btn-success mt-3 justify-content-center" target="_blank">
+            Learn More</a>
+        </div>
+
+        
+        
+        
+        
+      </div>
+      
+       <div>
+        <a href="/portfolio" class="mx-auto seeMoreProjects  btn btn-outline-secondary mt-3 justify-content-center">
+          View More Projects
+         </a>
+       </div>
+       
+     </div>
+    
+  
+    
+  </section>
+
+
+
+    
+
+
+
+<!--<div class="container-fluid mx-auto text-center p-3 mt-4">
+  <span id="otherServices"></span> 
+  <h3>Other Services We Render</h3>
+</div>-->  
+
+
+
+
+
+
+
+
+
+  
+<section class="container-fluid row otherServicesRender" >
+
+  <div class="container-fluid mx-auto text-center p-3 mt-4">
+    <span id="otherServices"></span> 
+    <h3>Other Services We Render</h3>
+  </div>
+  
+  <div class=" carousel col-sm-5 p-3" style="float:right; clear:right">
+    
+      <div class="container-fluid mt-3">
+       <h3>InfoTechCrush News</h3>
+       <p>   Technology</p>
+      </div>  
+  
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel"
+        data-aos="flip-right" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+   
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+    
+        
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+
+          <div class="carousel-item active"  data-bs-interval="3000">
+
+           <a href="https://www.reuters.com/legal/alamedas-ex-ceo-tells-judge-she-hid-billions-loans-ftx-execs-2022-12-23/" target="_blank">
+           <img src="/ftx.webp" alt="alamedas-ex-ceo" class="d-block" style="width:100%">
+           </a>
+
+            <div class="carousel-caption">
+              <h5>FTX</h5>
+              <p>
+               <a href="https://www.reuters.com/legal/alamedas-ex-ceo-tells-judge-she-hid-billions-loans-ftx-execs-2022-12-23/" target="_blank">
+               Bankman-Fried, FTX execs received billions in hidden loans, ex-Alameda CEO says
+               </a>
+             </p>
+            </div>
+  
+          </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+
+         <a  href="https://www.reuters.com/technology/twitter-restores-suicide-prevention-feature-after-reuters-report-2022-12-24/" target="_blank">
+         <img src="/twitter.webp" alt="twitter" class="d-block" style="width:100%">
+         </a>
+        
+          <div class="carousel-caption">
+           <h5>Twitter</h5>
+            <p>
+             <a href="https://www.reuters.com/technology/twitter-restores-suicide-prevention-feature-after-reuters-report-2022-12-24/" target="_blank">
+              Twitter restores suicide prevention feature after Reuters report
+             </a>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+
+         <a href="https://www.reuters.com/world/asia-pacific/north-koreas-weapons-programme-defies-covid-outbreak-reaches-uncharted-territory-2022-12-27/" target="_blank">
+         <img src="/korea.jpg" alt="North korea" class="d-block" style="width:100%">
+         </a>
+        
+         <div class="carousel-caption">
+          <h5>North Korea</h5>
+          <p>
+            <a href="https://www.reuters.com/world/asia-pacific/north-koreas-weapons-programme-defies-covid-outbreak-reaches-uncharted-territory-2022-12-27/" target="_blank">
+            North Korea's weapons programme defies COVID outbreak, reaches 'uncharted territory'
+            </a>
+          </p>
+        </div>
+        
+
+      </div>
+
+    </div>
+    
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+         <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+  
+  </div>
+  
+
+
+   
+  
+    
+
+    <div class=" col-sm-3 mt-3 p-3 two">
+      <h2>Digital Marketing</h2>
+       <p class="  p-1">
+        With a deep understanding of the latest digital marketing trends and tools, 
+        We can help businesses generate organic traffic to their websites through
+        a data-driven approach that focuses on creating valuable content, 
+        building quality backlinks, 
+        and optimizing website structure and usability.
+       </p>
+    </div>
+  
+    <div class=" col-sm-3 mt-3 p-3 two">
+      <h2>SEO</h2>
+      <p class="  p-1">
+        We have a deep understanding of the principles
+        and best practices of search engine optimization, 
+        including on-page optimization, link building,
+        keyword research, and analytics. We use various SEO tools 
+        and techniques to help websites rank higher in 
+        search engine results pages (SERPs) and 
+        attract more organic traffic. 
+        We also stay up-to-date with the latest trends 
+        and changes in search engine algorithms and adjust your strategies accordingly. 
+      </p>    
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <div class="row besidecarousel2" >  
+
+     <div class=" col-sm-5 p-3"></div>
+
+      <div class="col-sm-3 p-3">
+  
+       <h2>Email Designing</h2>
+       <p class="  p-1">
+        With our expertise in developing responsive design,
+        we can craft email templates that look great on any device
+        and inspire action from subscribers.
+        We specialize in creating visually stunning 
+        and 
+        highly engaging email campaigns that captivate audiences and drive results.
+       </p>
+      </div>
+  
+      <div class=" col-sm-3 p-3">
+
+        <h2>Arabic Translation</h2>
+        <p  class="  p-1">
+          With a deep understanding of the Arabic language and culture, we can 
+          provide translations of the contents of websites into arabic language.
+          These translations are not only linguistically correct, but also culturally appropriate.<br/>
+          <span href="" class="typewrite" data-period="2000" 
+            data-type='[ "يمكننا ترجمة", "نصوص اللغة الإنجليزية ", "إلى", "اللغة العربية" ]'
+            style="color:#009999; ">
+              <span class="wrap"></span>
+          </span>
+        </p>  
+        
+         
+      </div>
+
+    </div>  
+
+
+     
+
+    
+</section> 
+
+
+
+  
+
+<!-- Go to The Top Button -->
+
+<button onclick="topFunction()" class="float" id="goToTheTopButton" title="Go to top">
+  
+  <i class="arrow2 up"></i><span style="font-size: 13px;">TOP</span>
+  
+</button>
+
+
+
+
+
+
+<form method="POST" action="/form" id="myForm" autocomplete="on" target="_blank" 
+class="container-fluid mt-3" ng-app="myApp" ng-controller="validateCtrl" name="myForm"
+data-aos="zoom-in-right" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+  <span id="contact"></span>
+  <div class="container-fluid">
+  
+    <div class="row">
+    
+      <div class="col-sm-3 col-md-6 col-lg-4 col-xl-4 text-white p-5 bg-dark";>
+        
+        <p>Contact Us</p>
+        <p>To discuss web design, development or other services 
+           we offer, please complete this form. 
+        </p>
+        <p> 
+           This form is developed to validate data provided
+           by the user and the data is received by our database.
+        </p>
+        <p>Give us a call on <a style="color:#009999">07030786761</a>.</p>
+
+
+        
+      </div>
+      
+      <div class="col-sm-9 col-md-6 col-lg-8 col-xl-8 bg-dark text-white">
+      
+        
+        
+        <div class="row" style="margin-top: 50px; margin-left: 2px; width: 100%;">
+                        
+          <input class="col-sm form-control me-1" type="text"  id="name" placeholder="Your name" 
+          name="name" ng-model="user" required>
+          
+
+          <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+            <span ng-show="myForm.user.$error.required">Username is required.</span>
+          </span>
+            
+          <input class="col-sm form-control formsSeparator" type="email"  id="email" placeholder="Your e-mail" name="email" 
+          ng-model="email" required>
+
+          
+          
+          <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+            <span ng-show="myForm.email.$error.required">Email is required.</span>
+            <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+          </span>
+            
+        </div>
+          
+          <input class="col-sm form-control me-1" type="text"  placeholder="Subject" name="subject"
+          style="margin-top: 25px; width: 100%;">
+
+          
+        <div class="col-sm">
+
+          <div>
+            
+             <textarea class="form-control" rows="5" id="comment" placeholder="message" name="message" 
+             style="margin-top: 25px;"></textarea>
+
+          </div>
+
+          <button type="submit" class="btn submitButton"  id="clickToDisable1"
+           style="margin-top: 25px; margin-bottom: 25px;" 
+           ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid">
+           Submit
+          </button>
+
+           <!--<button type="submit" class="btn submitButton"  id="clickToDisable1"
+           style="margin-top: 25px; margin-bottom: 25px;" 
+           ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid"
+           onclick="disbleOnclick()">
+           Submit
+          </button>-->
+       
+        </div>
+           <!--<div><p id="clickToDisable" style="display: none;">sent, Thank You</p></div>-->     
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="m p-4 text-white text-center footerAll">
+    
+
+       
+
+    <!--Footer -->
+
+  
+  <div class="footerLarge footerSection" id="aaa">
+
+    <div>Our profiles in socia media:</div>
+    <a href="https://github.com/jelil-info" target="_self"><i class="fa fa-github footerOpacity"></i></a>
+    <a href="https://www.linkedin.com/in/OyekanmiOyetunji/" target="_self"><i class="fa fa-linkedin footerOpacity"></i></a>
+    <a href="https://www.facebook.com/oyekanmi.jalil" target="_self"><i class="fa fa-facebook-official footerOpacity"></i></a>
+    <a href="https://www.instagram.com/jelil_info/" target="_self"><i class="fa fa-instagram footerOpacity"></i></a>
+    <a href="https://www.twitter.com"><i class="fa fa-twitter footerOpacity" target="_self"></i></a>
+    
+  </div>
+
+  <p><!--&copy; Copyright 2023 <br/>-->
+    <!--<span>Built by</span>-->  
+    <a class="footerLast" href="#home" title="jelil-info" target="_blank"> 
+      © 2023 InfoTechCrush Ltd, all rights reserved.
+    </a>
+  </p>
+
+
+
+  <!--<p id="width"></p>-->
+    
+    
+
+  
+  
+</form> 
+
+    
+  
+
+
+
+
+
+
+
+
+
+      
+<script>
+
+  //typewrite
+
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+
+
+//code for animation
+  TweenLite.to(".rectangle", 5, { 
+    backgroundColor: "#000000",
+    color:"red",
+    ease: Power4.easeIn
+  });
+  AOS.init();
+
+  //code for form validation
+  
+  var app = angular.module('myApp', []);
+  app.controller('validateCtrl', function($scope) {
+      $scope.user = '';
+      $scope.email = '';
+      });
+
+      /*function disbleOnclick() {
+        document.getElementById("clickToDisable").style.display = "block";
+        document.getElementById("clickToDisable1").style.display = "none";
+
+
+        clickToDisable1
+        //document.getElementById("clickToDisable").innerHTML = "nonnnnne"
+      };*/ 
+      
+  
+  //code for good morning
+  var myDate = new Date();
+      var hrs = myDate.getHours();
+  
+      var greet;
+  
+      if (hrs < 12)
+          greet = 'Good Morning';
+      else if (hrs >= 12 && hrs <=17)
+          greet = 'Good Afternoon';
+      else if (hrs >= 17 && hrs <= 24)
+          greet = 'Good Evening';
+  
+      document.getElementById('lblGreetings').innerHTML =
+          '<b>' + greet + '</b> ';
+
+
+// Button appears when scroll
+
+let mybutton = document.getElementById("goToTheTopButton");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+
+// set up text to print, each item in array is new line
+var aText = new Array(
+"We build bespoke websites to deliver unique experiences that are meant particularly for your products or services,", 
+"uniformly across platforms and devices."
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter(); 
+
+//Dark Mode Button
+/*function darkMode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}*/
+
+
+
+/*Click on the Menu Icon to transform it to "X"*/
+
+/*function myFunction(x) {
+  x.classList.toggle("change");
+}*/
+
+//Width setting
+var w = window.innerWidth;
+var h = window.innerHeight;
+
+var x = document.getElementById("width");
+x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
+
+
+
+</script>
+
+
+    
+  
+
+
+</body>
+
+</html>

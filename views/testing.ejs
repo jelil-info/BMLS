@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html  lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  
+  <title>InfoTechCrush | Building from ground up</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="Keywords" content="InfoTechCrush, The home of building from      ground up"/>
+  <meta name="author" content="Oyekanmi Oyetunji"/>
+  <meta name="refresh" content="30"/>
+
+  
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <script src="https://kit.fontawesome.com/40c559f4dd.js"></script>
+
+  <!--CSS-->
+	<!-- load bootstrap and our own personal stylesheet -->
+	
+	<link rel="stylesheet" href="css/style.css">
+  <script src="public/js/a.js"></script>
+   <!--ICONS-->
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+   <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+
+   
+
+<!--Next, link AOS styles and scripts:-->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!--Google Fonts:-->
+
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css"/>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--Next, link AOS styles and scripts:
+
+<link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+
+<script src="bower_components/aos/dist/aos.js"></script>-->
+
+<!--AngularJs scripts-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+<!--nav for both mobile and desktop-->
+
+<nav class="navbar navbar-expand-md sticky-top navbar1">
+  
+  <div class="container-fluid">
+
+    
+
+      <a class="navbar-brand" href="/home">
+
+        
+      <!--<img src="jelil.jpg" alt="Logo" style="width:40px;" class="rounded-pill">-->
+      <p class="h2 logo" id="logo" style="color:white" target="_self">InfoTechCrush</p>
+
+      </a>
+    
+
+      
+      
+      
+         
+        <div class="clearfix" style="color:white;">
+          <span id="lblGreetings" class="float-start"></span>
+          <!--<span onclick="darkMode()">dark</span>-->
+        </div>
+      
+      
+
+      
+      <!--Mobile Menu Background Color-->
+  
+    <div class="offcanvas offcanvas-start sideMobileMenu" id="sideBar">
+
+      <div class="offcanvas-header mobileMenuAdjust">
+
+    
+        <h1 class="offcanvas-title" id="mobileMenuHeading">InfoTechCrush</h1>
+
+          <!--cancel button-->
+          <div id="mobileMenuButton1">
+            <p class="closebtn" type="button" style="display: hidden;"
+            data-bs-dismiss="offcanvas"> &times;
+            </p>
+          </div>
+
+
+
+       <!--Mobile Menu-->
+            
+      <div   class="" id="mobileMenu">
+
+
+        
+          <ul class="offcanvas-body mobileNav">
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/home" target="_self">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#about" target="_self">About Us</a>
+            </li>
+            
+            <!--<li class="nav-item dropdown-toggle btn btn-primary" data-bs-toggle="dropdown">
+              <a class="nav-link dropdown-menu" href="#">Services</a>
+            </li>-->
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio" target="_self">Our Portfolio</a>
+            </li>
+  
+  
+  
+            <div class="r">
+              <li class="tooltip2">
+              
+                <label class="label" for="touch"><span class="plusSign">Services</span></label>               
+                <input type="checkbox" id="touch"> 
+              
+                <ul class="plusSignMenu">
+                  
+                  <li><a href="#otherServices" target="_self">Other Services</a></li>
+                  <li><a href="" target="_blank">Websites Development</a></li>
+                  <li><a href="" target="_blank">Application Development</a></li>
+                  <li><a href="" target="_blank">Digital marketing</a></li>
+                  <li><a href="" target="_blank">Search Engine Optimization</a></li>
+                  
+                </ul>
+                <!--<span class="tooltiptext">Tooltip text</span>-->
+              </li>
+            </div>
+            
+          
+  
+            
+            
+            
+  
+            <li class="nav-item">
+              <a class="nav-link ContactMobile" href="#contact" target="_self">Contact Us</a>
+            </li>
+  
+          </ul>
+        
+        
+          
+        
+      </div>
+
+    </div>
+
+          
+  
+    
+    
+        
+        <!--Desktop Menu-->
+        
+        <ul class="collapse navbar-collapse justify-content-end desktopNav">
+          
+
+         
+
+
+
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="/home" target="_self">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/#about" target="_self">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/portfolio" target="_self">Our Portfolio</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Services<i class="arrow1 down1"></i></a>
+            <div class="dropdown-content">
+              <a class="nav-link list-group-item" href="#otherServices" target="_self">Other Services</a>
+              <a class="nav-link list-group-item" href="#" target="_self">Websites Development</a>
+              <a class="nav-link list-group-item" href="#" target="_self">Application Development</a>
+              <a class="nav-link list-group-item" href="#" target="_self">Digital marketing</a>
+              <a class="nav-link list-group-item" href="#" target="_self">Search Engine Optimization</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" target="_self">Contact</a>
+          </li>
+          
+
+
+
+          <!--<li class="nav-item">
+
+            
+            <a href="https://github.com/jelil-info" target="_self"><i class="nav-link fa fa-github footerOpacity"></i></a>
+            <a href="https://www.linkedin.com/in/OyekanmiOyetunji/" target="_self"><i class="nav-link fa fa-linkedin footerOpacity"></i></a>
+            <a href="https://www.facebook.com/oyekanmi.jalil" target="_self"><i class="nav-link fa fa-facebook-official footerOpacity"></i></a>
+            <a href="https://www.instagram.com/jelil_info/" target="_self"><i class="nav-link fa fa-instagram footerOpacity"></i></a>
+            <a href="https://www.twitter.com"><i class="nav-link fa fa-twitter footerOpacity" target="_self"></i></a>
+
+          </li>-->
+
+        </ul>
+
+        
+
+
+        
+        
+
+
+          
+
+
+        
+  </div>
+  
+  <!--mobile menu button-->
+
+      <div class="sideButton">
+        <button class="btn navbar-toggler" type="button" 
+        data-bs-toggle="offcanvas" data-bs-target="#sideBar">
+          <div class="barsContainer" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </button>
+      </div>
+      
+    
+       
+  </div>
+  
+</nav>
+
+
+
+
+
+
+<div class="container-fluid">
+  
+
+  <div class="row">
+
+    
+
+    <div class="col-12" style="margin-top: 100px;margin-bottom: 100px;">
+
+      
+        <div style="border:1px solid #d3d3d3;">
+            <h1>Thanks! We'll get back to you as soon as possible</h1>  
+        </div>
+  
+      
+    
+    </div>
+  
+
+    <div class="col-12 aboutMeBottom">
+      
+      <section class="formAboutMe">
+        
+      </section>
+      
+    </div>
+
+  </div>
+  
+</div>
+
+<div onclick="topFunction()" class="fab-wrapper" id="fab-wrapper">
+  <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
+  <label class="fab" for="fabCheckbox">
+    <span class="fab-dots fab-dots-1"></span>
+    <span class="fab-dots fab-dots-2"></span>
+    <span class="fab-dots fab-dots-3"></span>
+  </label>
+  <div class="fab-wheel">
+    <a class="fab-action fab-action-1">
+      <i class="fas fa-question"></i>
+    </a>
+    <a class="fab-action fab-action-2">
+      <i class="fas fa-book"></i>
+    </a>
+        <a class="fab-action fab-action-3">
+      <i class="fas fa-address-book"></i>
+    </a>
+        <a class="fab-action fab-action-4">
+      <i class="fas fa-info"></i>
+    </a>
+  </div>
+</div><div class="fab-wrapper">
+  <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
+  <label class="fab" for="fabCheckbox">
+    <span class="fab-dots fab-dots-1"></span>
+    <span class="fab-dots fab-dots-2"></span>
+    <span class="fab-dots fab-dots-3"></span>
+  </label>
+  <div class="fab-wheel">
+    <a class="fab-action fab-action-1">
+      <i class="fas fa-question"></i>
+    </a>
+    <a class="fab-action fab-action-2">
+      <i class="fas fa-book"></i>
+    </a>
+        <a class="fab-action fab-action-3">
+      <i class="fas fa-address-book"></i>
+    </a>
+        <a class="fab-action fab-action-4">
+      <i class="fas fa-info"></i>
+    </a>
+  </div>
+</div>
+  
+
+
+    <!-- Go to The Top Button -->
+
+  <button onclick="topFunction()" class="float" id="goToTheTopButton" title="Go to top">
+  
+    <i class="arrow2 up"></i><span style="font-size: 13px;">TOP</span>
+    
+  </button>
+
+  
+
+  
+  
+
+
+
+
+
+
+ 
+
+
+
+  
+<div class="item" data-aos="fade-up">1</div>
+<div class="item" data-aos="fade-down">2</div>
+<div class="item" data-aos="fade-right">3</div>
+<div class="item" data-aos="fade-left">4</div>
+<div class="item" data-aos="zoom-in">5</div>
+<div class="item" data-aos="zoom-out">6</div>
+<div class="item" data-aos="slide-up">7</div>
+<div class="item" data-aos="flip-up">8</div>
+<div class="item" data-aos="flip-down">9</div>
+<div class="item" data-aos="flip-right">10</div>
+<div class="item" data-aos="flip-left">11</div>
+
+
+<h1>Using AOS to Add Animations</h1>
+<h2>Basic Animation</h2>
+<p>You need to scroll down to see the effect.</p>
+<div class="box a" data-aos="fade-up">
+<h2>Animated using <code>fade-up</code>.</h2></div>
+<div class="box b" data-aos="flip-down"><h2>Animated using <code>flip-down</code>.</h2></div>
+<div class="box b" data-aos="zoom-in"><h2>Animated using <code>zoom-in</code>.</h2></div>
+
+
+
+
+
+
+
+<div class="flip-box col-sm bg-light m-sm-4 m-1 p-3 portfolio" style="width: 350px;height: 350px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/portfolio.png" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>flipCreative professionals, such as graphic designers, artists and writers, 
+        use portfolio websites to consolidate and display examples of their work. 
+        That way, potential employers can head over to someone’s portfolio to easily check out their skills 
+        and expertise. 
+      </p>
+    </div>
+  </div>
+</div>
+<script>
+  
+        
+    
+    //code for good morning
+    var myDate = new Date();
+        var hrs = myDate.getHours();
+    
+        var greet;
+    
+        if (hrs < 12)
+            greet = 'Good Morning';
+        else if (hrs >= 12 && hrs <= 17)
+            greet = 'Good Afternoon';
+        else if (hrs >= 17 && hrs <= 24)
+            greet = 'Good Evening';
+    
+        document.getElementById('lblGreetings').innerHTML =
+            '<b>' + greet + '</b> ';
+  
+  //Knowing Width
+  var w = window.innerWidth;
+  var h = window.innerHeight;
+  
+  var x = document.getElementById("width");
+  x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
+  
+  
+  
+  
+  
+             
+
+             
+  </script>
+  
+  
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    link(rel='stylesheet', type='text/css', href='/templates/email-template.css')
+    style.
+      p {
+        color: blue;
+      }
+    script(type='text/javascript').
+      if (foo) bar(1 + 5);
+  body
+    h1 Welcome To InfoTechCrush
+    div.remark
+     p Hello #{name}, Thank you for filling the form.

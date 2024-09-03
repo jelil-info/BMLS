@@ -1,0 +1,69 @@
+<mjml>
+  <mj-body background-color="#d7dde5">
+    <mj-section full-width="full-width">
+      <mj-column width="66.66666666666666%" vertical-align="middle">
+        <mj-text align="left" font-size="11px" padding-bottom="0px" padding-top="0"><span style="font-size: 11px">Hello, {{user}}</span></mj-text>
+      </mj-column>
+      <mj-column width="33.33333333333333%" vertical-align="middle">
+        <mj-text align="right" font-size="11px" padding-bottom="0px" padding-top="0"><span style="font-size: 11px"><a href="https://infotechcrush.com/" style="text-decoration: none; color: inherit;">Welcome to InfoTechCrush</a></span></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" full-width="full-width">
+      <mj-column width="33.33333333333333%" vertical-align="middle">
+        <mj-image src="http://191n.mj.am/img/191n/1t/hx.png" alt="OnePage" padding-bottom="0px" padding-top="10px"></mj-image>
+      </mj-column>
+      <mj-column width="66.66666666666666%" vertical-align="middle">
+        <mj-text align="center" padding-bottom="0px" padding-top="10px"><a href="https://infotechcrush" style="text-decoration: none; color: inherit;">Home</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="https://infotechcrush.com/about" style="text-decoration: none; color: inherit;">About</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+          <a href="https://infotechcrush.com/portfolio" style="text-decoration: none; color: inherit;">Portfolio</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-url="https://infotechcrush.com/nature.jpg" vertical-align="middle" background-size="cover" full-width="full-width" background-repeat="no-repeat">
+      <mj-column width="100%" vertical-align="middle">
+        <mj-text align="center" font-size="14px" color="white" padding-bottom="10px" padding-top="45px"><span style="font-size: 30px; line-height: 30px;">Building from ground up</span><br /><br />Tailored to satisfy your specific needs</mj-text>
+        <mj-button align="center" background-color="#e85034" color="#fff" border-radius="24px" href="https://infotechcrush.com/newsletter" font-family="Ubuntu, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45px" padding-top="10px">SUBSCRIBE</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" vertical-align="top" full-width="full-width">
+      <mj-column vertical-align="top" width="33.33333333333333%">
+        <mj-image src="http://191n.mj.am/img/191n/1t/hs.png" alt="" width="50px"></mj-image>
+        <mj-text align="center" color="#009999" font-size="11px" padding-bottom="30px"><span style="font-size: 14px; color: #009999">Custom Design</span><br /><br />We build websites that do not look exactly the same as thousands of others. The websites we build are as a result from building from sratch in order for your websites to adapt to your specific requirements. </mj-text>
+      </mj-column>
+      <mj-column vertical-align="top" width="33.33333333333333%">
+        <mj-image src="http://191n.mj.am/img/191n/1t/hm.png" alt="" width="50px"></mj-image>
+        <mj-text align="center" color="#009999" font-size="11px" padding-bottom="30px"><span style="font-size: 14px; color: #009999">Easy to Edit</span><br /><br />You have full control of every aspect, element of your website and you can easily migrate to any platform if there is need to do so. We build dynamic websites that can be easily be crafted so that new features and elements will be added in order to meet your immediate and current specific needs. Your website will be absolutely scalable. </mj-text>
+      </mj-column>
+      <mj-column vertical-align="top" width="33.33333333333333%">
+        <mj-image src="http://191n.mj.am/img/191n/1t/hl.png" alt="" width="50px"></mj-image>
+        <mj-text align="center" color="#009999" font-size="11px" padding-bottom="30px" padding-top="3px"><span style="font-size: 14px; color: #009999">24/7 Support</span><br /><br />We have dedicated support team, who make sure your websites are up, running, and functional so that your customers can find you 24/7.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#009999" vertical-align="middle" full-width="full-width">
+      <mj-column width="100%" vertical-align="middle">
+        <mj-text align="center" color="#ffffff" font-size="18px" padding-bottom="10px">Why choose us?</mj-text>
+        <mj-divider border-color="#fff" border-style="solid" border-width="1px" padding-left="100px" padding-right="100px" padding-bottom="20px" padding-top="20px"></mj-divider>
+        <mj-text align="center" color="#f8d5d1" font-size="11px" padding-bottom="25px">We build bespoke websites to deliver unique experiences that are meant particularly for your products or services,
+uniformly across platforms and devices</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section vertical-align="middle" background-color="#ffffff" full-width="full-width">
+      <mj-column width="50%" vertical-align="middle">
+        <mj-image src="http://191n.mj.am/img/191n/1t/h2.jpg" alt="" padding-bottom="20px" padding-top="20px"></mj-image>
+      </mj-column>
+      <mj-column width="50%" vertical-align="middle">
+        <mj-text align="left" color="#9da3a3" font-size="11px" padding-bottom="25px" padding-top="25px"><span style="font-weight: bold; font-size: 14px; color: #45474e">We develop simple, unique and easily navigable websites that take lesser time to load while giving clear idea to visitors about the central theme of the page.</mj-text>
+        <mj-button align="left" background-color="#e85034" color="#fff" border-radius="24px" font-size="11px" href="https://infotechcrush.com/" font-family="Ubuntu, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45px" padding-top="10px">DISCOVER MORE ABOUT US</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section full-width="full-width">
+      <mj-column width="100%" vertical-align="middle">
+        <mj-text align="center" font-size="11px" padding-bottom="0px" padding-top="0px">
+          <p style="font-size: 11px">Give us a call on +2347030786761</p>
+        </mj-text>
+        <mj-text align="center" font-size="11px" padding-bottom="0px" padding-top="0px">
+          <p style="font-size: 11px">Email: jelil@infotechcrush.com</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

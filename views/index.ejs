@@ -1,0 +1,984 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title>BMLS</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="Keywords" content="Websites creation" />
+  <meta name="author" content="Oyekanmi Oyetunji" />
+  <meta name="refresh" content="30" />
+
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <script src="https://kit.fontawesome.com/40c559f4dd.js"></script>
+
+  <!-- Fontawesome icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!--CSS-->
+  <!-- load bootstrap and our own personal stylesheet -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="public/js/a.js"></script>
+  <!--ICONS-->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+  <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+
+
+
+  <!--Next, link AOS styles and scripts:-->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--Google Fonts:-->
+
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css" />
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!--Next, link AOS styles and scripts:
+
+<link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+
+<script src="bower_components/aos/dist/aos.js"></script>-->
+
+  <!--AngularJs scripts-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+  <!-- Google reCAPTCHA CDN -->
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+  <!--nav for both mobile and desktop-->
+
+  <nav class="navbar navbar-expand-md sticky-top navbar1">
+
+    <div class="container-fluid">
+
+
+
+      <a class="navbar-brand" href="https://infotechcrush.com/">
+
+
+        <!--<img src="jelil.jpg" alt="Logo" style="width:40px;" class="rounded-pill">-->
+        <p class="h2 logo" id="logo" style="color:white" target="_self">BMLS</p>
+
+      </a>
+
+
+
+
+
+
+      <div class="clearfix" style="color:white;">
+        <span id="lblGreetings" class="float-start"></span>
+        <!--<span onclick="darkMode()">dark</span>-->
+      </div>
+
+
+
+
+      <!--Mobile Menu Background Color-->
+
+      <div class="offcanvas offcanvas-start sideMobileMenu" id="sideBar">
+
+        <div class="offcanvas-header mobileMenuAdjust">
+
+
+          <h1 class="offcanvas-title" id="mobileMenuHeading">BMLS</h1>
+
+          <!--cancel button-->
+          <div id="mobileMenuButton1">
+            <p class="closebtn" type="button" style="display: hidden;" data-bs-dismiss="offcanvas"> &times;
+            </p>
+          </div>
+
+
+
+          <!--Mobile Menu-->
+
+          <div class="" id="mobileMenu">
+
+
+
+            <ul class="offcanvas-body mobileNav">
+
+              <li class="nav-item">
+                <a class="nav-link" href="https://infotechcrush.com/" target="_self">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/about" target="_self">Mission</a>
+              </li>
+
+              <!--<li class="nav-item dropdown-toggle btn btn-primary" data-bs-toggle="dropdown">
+              <a class="nav-link dropdown-menu" href="#">Services</a>
+            </li>-->
+
+              <li class="nav-item">
+                <a class="nav-link" href="/portfolio" target="_self">Products</a>
+              </li>
+
+
+
+              <div class="r">
+                <li class="tooltip2">
+
+                  <label class="label" for="touch"><span class="plusSign">Services</span></label>
+                  <input type="checkbox" id="touch">
+
+                  <ul class="plusSignMenu">
+
+                    <li><a href="https://infotechcrush.com/" target="_self">Our Services</a></li>
+                    <li><a>Installation and training</a></li>
+                    <li><a>Maintenance and repair</a></li>
+                    <li><a>Technical support</a></li>
+                    <li><a>Laboratory Consulting</a></li>
+
+                  </ul>
+                  <!--<span class="tooltiptext">Tooltip text</span>-->
+                </li>
+              </div>
+
+
+
+
+
+
+
+              <li class="nav-item">
+                <a class="nav-link ContactMobile" href="https://infotechcrush.com/" target="_self">Contact</a>
+              </li>
+
+            </ul>
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <!--Desktop Menu-->
+
+        <ul class="collapse navbar-collapse justify-content-end desktopNav">
+
+
+
+
+
+
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://infotechcrush.com/" target="_self">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about" target="_self">Mission</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/portfolio" target="_self">Products</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Services<i class="arrow1 down1"></i></a>
+            <div class="dropdown-content">
+              <a class="nav-link list-group-item" href="#otherServices" target="_self">our Services</a>
+              <a class="nav-link list-group-item">Installation and training</a>
+              <a class="nav-link list-group-item">Maintenance and repair</a>
+              <a class="nav-link list-group-item">Technical support</a>
+              <a class="nav-link list-group-item">Laboratory Consulting</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" target="_self">Contact</a>
+          </li>
+
+
+
+
+          <!--<li class="nav-item">
+
+
+            <a href="https://github.com/jelil-info" target="_self"><i class="nav-link fa fa-github footerOpacity"></i></a>
+            <a href="https://www.linkedin.com/in/OyekanmiOyetunji/" target="_self"><i class="nav-link fa fa-linkedin footerOpacity"></i></a>
+            <a href="https://www.facebook.com/oyekanmi.jalil" target="_self"><i class="nav-link fa fa-facebook-official footerOpacity"></i></a>
+            <a href="https://www.instagram.com/jelil_info/" target="_self"><i class="nav-link fa fa-instagram footerOpacity"></i></a>
+            <a href="https://www.twitter.com"><i class="nav-link fa fa-twitter footerOpacity" target="_self"></i></a>
+
+          </li>-->
+
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <!--mobile menu button-->
+
+      <div class="sideButton">
+        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideBar">
+          <div class="barsContainer" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </button>
+      </div>
+
+
+
+    </div>
+
+  </nav>
+
+
+
+
+
+
+
+
+  <div class="header container-fluid">
+
+    <div class=" text-white h-150">
+      <span class="display-6 typewriting1">Welcome To BMLS</span>
+
+      <!--<span class="display-6" style="color:red">InfoTechCrush</span>-->
+
+      <p class="typewriting2" id="typedtext"></p>
+
+      <button onclick="window.location.href='#about';" class="btn btn-outline-secondary aboutUs">Services
+        rendered</button>
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <section class="container-fluid  servicesDescription">
+
+    <span id="about"></span>
+
+    <div class="row" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+      data-aos-once="true">
+
+
+      <div class="shadow-lg p-4 col-sm-5 mt-3">
+        <h2>The Services We Render</h2>
+
+        <p>
+          Our Products:
+        </p>
+
+
+        <ol class="ourServices">
+          <li href="#">Diagnostic instruments</li>
+          <li href="#">Laboratory equipment</li>
+          <li href="#">Consumables</li>
+          <li href="#">Customized solutions</li>
+        </ol>
+
+
+        <p><button onclick="window.location.href='#otherServices';" type="button"
+            class="btn btn-outline-secondary readMoreServices">
+            More services
+          </button>
+        </p>
+      </div>
+
+      <div class="servicesDescription2 shadow-lg p-4 col-sm-3 mt-3 bg-light" data-aos="zoom-in" data-aos-duration="1500"
+        data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+        <h2>Expert in Installation and Training</h2>
+        <p><img src="/folder3.png" alt="computer" width="60" height="60"
+            style="margin-left: auto; margin-right: auto; color: red;"></p>
+
+        <p>
+          Our team of experienced technicians and trainers is dedicated to ensuring that your equipment is set up correctly,
+          operates efficiently, and is fully integrated into your laboratory workflow.
+        </p>
+
+      </div>
+
+      <div class="servicesDescription2 shadow-lg p-4 col-sm-3 mt-3 bg-light" data-aos="zoom-in" data-aos-duration="1500"
+        data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+        <h2>Comprehensive Maintenance and Repair Services</h2>
+        <p><img src="/responsive2.png" alt="computer" width="60" height="60"
+            style="margin-left: auto; margin-right: auto; color: red;"></p>
+
+        <p>
+          At BMLS, we understand that downtime in a medical laboratory can have serious consequences. That's why we offer comprehensive maintenance and repair services designed to keep your equipment running smoothly and minimize disruptions to your operations.
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="row availability" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+      data-aos-once="true">
+
+      <div class="p-4 col-sm-5 mt-3">
+
+
+
+
+      </div>
+
+      <div class="servicesDescription2 shadow-lg p-4 col-sm-3 bg-light mt-3">
+
+        <h2>Dedicated Technical Support:</h2>
+        <p><img src="/time3.png" alt="computer" width="60" height="60"
+            style="margin-left: auto; margin-right: auto; color: red;"></p>
+
+        <p>
+          At BMLS, we believe that exceptional customer service is just as important as the quality of our products. That's why we offer dedicated technical support to assist you with any questions or issues you may encounter.
+        </p>
+
+
+      </div>
+
+      <div class="servicesDescription2 shadow-lg p-4 col-sm-3 bg-light mt-3" data-aos="zoom-in" data-aos-duration="1500"
+        data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+        <h2>Additional Service: Laboratory Consulting</h2>
+        <p><img src="/paper.png" alt="computer" width="60" height="60"
+            style="margin-left: auto; margin-right: auto; color: red;"></p>
+
+        <p>
+          At [Company Name], we offer comprehensive laboratory consulting services to help you optimize your laboratory operations, improve efficiency, and enhance patient care.
+        </p>
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+  </section>
+
+
+
+  <section class="container-fluid mt-4 projectsOffer">
+
+    <span id="portfolio"></span>
+
+    <div class="col-8 projectContainer bg-warning p-4">
+      <h1 class="mx-auto projects">Products and Prices for cheaper products</h1>
+
+      <h4 class="p-1">
+        When you choose BMLS, you're investing in a partnership that extends beyond the sale of equipment. Our commitment to excellence ensures that you receive the highest level of support and training. Contact us today to schedule your installation and training services.
+      </h4>
+
+
+
+      <div class="row">
+
+        <div class="col-sm bg-success m-sm-4 m-1 p-3 portfolio" style="width:350px;" ; data-aos="zoom-in"
+          data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+          <h2 class="Headingproject">Non Vacutainer EDTA Bottle</h2>
+          <p class="p-1">
+            The Non Vacutainer EDTA Bottle is a commonly used blood collection tube in medical laboratories.
+            It contains ethylenediaminetetraacetic acid (EDTA), a chelating agent that binds to calcium ions in the blood, preventing blood clotting.
+          </p>
+          <img src="/vacutainer.jpg" alt="vacutainer" width="300px" height="430px" class="imagePortfolio">
+          <p class="btn btn-success mt-3 justify-content-center">Non Vacutainer EDTA Bottle<br><b>₦3000 per pack</b></p>
+        </div>
+
+
+
+        <div class="col-sm bg-secondary m-sm-4 m-1 p-3 portfolio" style="width: 350px" data-aos="zoom-in"
+          data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+          <h2 class="Headingproject">Urinalysis Strip</h2>
+          <p class="p-1">
+            A urinalysis strip, also known as a dipstick or urine test strip, is a diagnostic tool used to rapidly screen urine samples for a variety of conditions.
+            It's a simple and convenient way to detect abnormalities in the urine that can indicate underlying health issues.
+          </p>
+          <img src="/urinalysis.jpg" alt="urinalysis" width="300px" height="430px" class="imagePortfolio">
+          <p class="btn btn-success mt-3 justify-content-center">Urinalysis Strip<br><b>₦8000 per pack</b></p>
+        </div>
+
+        <div class="col-sm bg-success m-sm-4 m-1 p-3 portfolio" style="width: 350px" data-aos="zoom-in"
+          data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+          <h2 class="Headingproject">Hiv Strip</h2>
+          <p class="p-1">
+            HIV rapid test strips are a convenient and confidential way to screen for HIV infection. These tests are designed to provide results within minutes and can be performed in a variety of settings, including healthcare facilities, community centers, and even at home.
+          </p>
+          <img src="/hivStrip.jpg" alt="hivStrip" width="300px" height="430px" class="imagePortfolio">
+          <p class="btn btn-success mt-3 justify-content-center">Ripped Skinny Jeans<br><b>₦5000 per pack</b></p>
+        </div>
+
+
+
+
+
+      </div>
+
+      <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+        <a href="/portfolio" class="mx-auto seeMoreProjects  btn btn-outline-secondary mt-3 justify-content-center">
+          View More Products
+        </a>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <section class="container-fluid mt-4 projectsOffer">
+
+    <span id="portfolio"></span>
+
+    <div class="col-8 projectContainer bg-warning p-4">
+      <h1 class="mx-auto projects">Products and Prices for high end products</h1>
+
+
+
+
+
+      <div class="row">
+
+        <div class="col-sm bg-success m-sm-4 m-1 p-3 portfolio" style="width:350px;" ; data-aos="zoom-in"
+          data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+          <h2 class="Headingproject">Icubator</h2>
+          <p class="p-1">
+            Incubators are vital pieces of equipment in medical laboratories,
+            providing a controlled environment for the growth and development of microorganisms, cells, and other biological samples.
+          </p>
+          <img src="/incubator.jpg" alt="incubator" width="300px" height="430px" class="imagePortfolio">
+          <p class="btn btn-success mt-3 justify-content-center">Incubator<br><b>₦6000 000 per pack</b></p>
+        </div>
+
+
+
+        <div class="col-sm bg-secondary m-sm-4 m-1 p-3 portfolio" style="width: 350px" data-aos="zoom-in"
+          data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+          <h2 class="Headingproject">Microscope(celtech)</h2>
+          <p class="p-1">
+            Microscopes are indispensable instruments in medical laboratories,
+            enabling scientists and technicians to visualize and analyze microscopic structures that are invisible to the naked eye.
+          </p>
+          <img src="/microscope.jpg" alt="microscope" width="300px" height="430px" class="imagePortfolio">
+          <p class="btn btn-success mt-3 justify-content-center">Microscope(celtech)<br><b>₦120 000 per pack</b></p>
+        </div>
+
+        <div class="col-sm bg-success m-sm-4 m-1 p-3 portfolio" style="width: 350px" data-aos="zoom-in"
+          data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+          <h2 class="Headingproject">Mindray (Haematology auto analyzer 2 parts)</h2>
+          <p class="p-1">
+            Hematology auto analyzers are automated laboratory instruments used to perform blood cell counts and other hematological tests. These devices have revolutionized the efficiency and accuracy of hematology laboratories.
+          </p>
+          <img src="/mindray.jpg" alt="mindray" width="300px" height="430px" class="imagePortfolio">
+          <p class="btn btn-success mt-3 justify-content-center">Mindray (Haematology auto analyzer 2 parts)<br><b>₦3000 000 per pack</b></p>
+        </div>
+
+
+
+
+
+      </div>
+
+      <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+        <a href="/portfolio" class="mx-auto seeMoreProjects  btn btn-outline-secondary mt-3 justify-content-center">
+          View More Projects
+        </a>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+  <!--<div class="container-fluid mx-auto text-center p-3 mt-4">
+  <span id="otherServices"></span>
+  <h3>Other Services We Render</h3>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Go to The Top Button -->
+
+  <button onclick="topFunction()" class="float" id="goToTheTopButton" title="Go to top">
+
+    <i class="arrow2 up"></i><span style="font-size: 13px;">TOP</span>
+
+  </button>
+
+
+
+
+
+
+  <form method="POST" action="/form" id="myForm" autocomplete="on" class="container-fluid mt-3"
+    ng-app="myApp" ng-controller="validateCtrl" name="myForm" data-aos="zoom-in-right" data-aos-duration="1500"
+    data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+    <span id="contact"></span>
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-sm-3 col-md-6 col-lg-4 col-xl-4 text-white p-5 bg-dark" ;>
+
+          <p>Contact Us</p>
+          <p>Partner with us to achieve your laboratory goals and deliver exceptional patient care.</p>
+          <p>
+            We need to store your personal details in our database so we can respond to you.
+
+          </p>
+          <p>Give us a call on <a style="color:#009999">+2347030786761</a>.</p>
+          <p>Email: <a style="color:#009999">support@bmls.ng.com</a></p>
+
+
+        </div>
+
+        <div class="col-sm-9 col-md-6 col-lg-8 col-xl-8 bg-dark text-white">
+
+
+
+          <div class="row" style="margin-top: 50px; margin-left: 2px; width: 100%;">
+
+            <input class="col-sm form-control me-1" type="text" id="name" placeholder="Your name" name="name"
+              ng-model="user" required>
+
+
+            <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+              <span ng-show="myForm.user.$error.required">Username is required.</span>
+            </span>
+
+            <input class="col-sm form-control formsSeparator" type="email" id="email" placeholder="Your e-mail"
+              name="email" ng-model="email" required>
+
+
+
+            <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+              <span ng-show="myForm.email.$error.required">Email is required.</span>
+              <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+            </span>
+
+          </div>
+
+          <input class="col-sm form-control me-1" type="text" placeholder="Subject" name="subject"
+            style="margin-top: 25px; width: 100%;">
+
+
+          <div class="col-sm">
+
+            <div>
+
+              <textarea class="form-control" rows="5" id="comment" placeholder="message" name="message"
+                style="margin-top: 25px;"></textarea>
+
+            </div>
+
+            <!--<div class="attachment-wrapper">
+        <label for="attachment">Attachment</label>
+        <input id="attachment" name="attachment" type="file" required/>
+      </div>-->
+
+            <div class="g-recaptcha" style="margin-top: 20px" data-sitekey="6LeIgrIpAAAAAMJtmfUb24MCmJr9EnJ5QYoGx1MM">
+            </div>
+
+            <div style="color:yellow; margin-top: 0" id="recaptchaerr"></div>
+
+
+            <button type="submit" class="btn submitButton" id="clickToDisable1"
+              style="margin-top: 25px; margin-bottom: 25px;"
+              ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid"
+              enctype="multipart/form-data" name="myButton">
+              Submit
+            </button>
+
+            <!--<button type="submit" class="btn submitButton"  id="clickToDisable1"
+           style="margin-top: 25px; margin-bottom: 25px;"
+           ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid"
+           onclick="disbleOnclick()">
+           Submit
+          </button>-->
+
+          </div>
+          <!--<div><p id="clickToDisable" style="display: none;">sent, Thank You</p></div>-->
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="m p-4 text-white text-center footerAll">
+
+
+
+
+      <!--Footer -->
+
+
+      <div class="footerLarge footerSection" id="aaa">
+
+        <div>Our profiles in socia media:</div>
+        <a href="https://github.com/jelil-info" target="_self"><i class="fa fa-github footerOpacity"></i></a>
+        <a href="https://www.linkedin.com/in/OyekanmiOyetunji/" target="_self"><i
+            class="fa fa-linkedin footerOpacity"></i></a>
+        <a href="https://www.facebook.com/oyekanmi.jalil" target="_self"><i
+            class="fa fa-facebook-official footerOpacity"></i></a>
+        <a href="https://www.instagram.com/jelil_info/" target="_self"><i class="fa fa-instagram footerOpacity"></i></a>
+        <a href="https://www.twitter.com"><i class="fa fa-twitter footerOpacity" target="_self"></i></a>
+
+      </div>
+
+      <p><!--&copy; Copyright 2023 <br/>-->
+        <!--<span>Built by</span>-->
+        <a class="footerLast" href="https://infotechcrush.com/" title="jelil-info" target="_self">
+          © 2024 BMLS Ltd, all rights reserved.
+        </a>
+      </p>
+
+
+
+      <!--<p id="width"></p>-->
+
+
+
+
+
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    //recaptcha
+    document.getElementById('myForm').addEventListener('submit', function (e) {
+      if (grecaptcha.getResponse() == "") {
+        e.preventDefault();
+        document.getElementById("recaptchaerr").innerHTML = 'Please select captcha';
+      } else {
+
+        //replacing button onsubmit
+        document.getElementById("recaptchaerr").innerHTML = 'Thank you for sending';
+        var newElement = document.createElement('p');
+        newElement.textContent = 'The form has been submitted.';
+        var oldElement = document.getElementById('clickToDisable1');
+        oldElement.replaceWith(newElement);
+        //document.getElementById("clickToDisable1").addEventListener("click", (e) => { e.preventDefault() });
+        //document.getElementById("myForm").reset();
+        /*var button = document.getElementById('myButton');
+        var oldValue = button.value;
+        var isDisabled = true;
+
+        button.disabled = isDisabled;
+
+        setTimeout(function() {
+            button.value = oldValue;
+            button.disabled = !isDisabled;
+        }, 3000);*/
+      }
+    });
+
+//replacing button onsubmit
+          /*function replaceElement() {
+             var newElement = document.createElement('p');
+             newElement.textContent = 'The form has been submitted.';
+             var oldElement = document.getElementById('clickToDisable1');
+             oldElement.replaceWith(newElement);
+         }*/
+
+
+    //typewrite
+
+    var TxtType = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName('typewrite');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+      document.body.appendChild(css);
+    };
+
+
+    //code for animation
+    TweenLite.to(".rectangle", 5, {
+      backgroundColor: "#000000",
+      color: "red",
+      ease: Power4.easeIn
+    });
+    AOS.init();
+
+    //code for form validation
+
+    var app = angular.module('myApp', []);
+    app.controller('validateCtrl', function ($scope) {
+      $scope.user = '';
+      $scope.email = '';
+    });
+
+    /*function disbleOnclick() {
+      document.getElementById("clickToDisable").style.display = "block";
+      document.getElementById("clickToDisable1").style.display = "none";
+
+
+      clickToDisable1
+      //document.getElementById("clickToDisable").innerHTML = "nonnnnne"
+    };*/
+
+
+    //code for good morning
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+      greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+      greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+      greet = 'Good Evening';
+
+    document.getElementById('lblGreetings').innerHTML =
+      '<b>' + greet + '</b> ';
+
+
+    // Button appears when scroll
+
+    let mybutton = document.getElementById("goToTheTopButton");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+
+
+    // set up text to print, each item in array is new line
+    var aText = new Array(
+      "We provide high-quality lab equipment and supplies for hospitals,",
+       "clinics, and research institutions. Our focus is on reliability, accuracy, and customer satisfaction."
+
+    );
+    var iSpeed = 100; // time delay of print out
+    var iIndex = 0; // start printing array at this posision
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 20; // start scrolling up at this many lines
+
+    var iTextPos = 0; // initialise text position
+    var sContents = ''; // initialise contents variable
+    var iRow; // initialise current row
+
+    function typewriter() {
+      sContents = ' ';
+      iRow = Math.max(0, iIndex - iScrollAt);
+      var destination = document.getElementById("typedtext");
+
+      while (iRow < iIndex) {
+        sContents += aText[iRow++] + '<br />';
+      }
+      destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+      if (iTextPos++ == iArrLength) {
+        iTextPos = 0;
+        iIndex++;
+        if (iIndex != aText.length) {
+          iArrLength = aText[iIndex].length;
+          setTimeout("typewriter()", 500);
+        }
+      } else {
+        setTimeout("typewriter()", iSpeed);
+      }
+    }
+
+
+    typewriter();
+
+    //Dark Mode Button
+    /*function darkMode() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }*/
+
+
+
+    /*Click on the Menu Icon to transform it to "X"*/
+
+    /*function myFunction(x) {
+      x.classList.toggle("change");
+    }*/
+
+    //Width setting
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+    var x = document.getElementById("width");
+    x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
+
+
+
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
